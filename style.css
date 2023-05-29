@@ -138,6 +138,10 @@ main {
 }
 
 #sobre h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
     color: var(--c5);
 }
 
@@ -169,6 +173,10 @@ main {
 }
 
 #projetos h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
     color: var(--c4);
 }
 
@@ -205,6 +213,14 @@ main {
     color: white;
 }
 
+#habilidades > h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+}
+
 #habilidades .div-flex {
     justify-content: center;
     flex-wrap: wrap;
@@ -216,13 +232,6 @@ main {
     height: 50px;
 }
 
-section > h3 {
-    display: block;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 1.1rem
-}
 
 
 
