@@ -5,19 +5,28 @@
 
 
 
-
 :root {
     --c1: #312F2F;
     --c2: #2E86AB;
     --c3: #84DCCF;
     --c4: #D62246;
     --c5: #F7A278;
- 
 }
+
+html {
+    scroll-behavior: smooth !important; /* Adiciona scroll suave em todos os elementos scrolláveis */
+}
+
 
 .div-flex {
     display: flex;
     align-items: center;
+}
+
+.div-flex-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .center {
@@ -135,8 +144,8 @@ main {
 
 
 #sobre {
+    position: relative;
     display: block;
-    margin: auto;
     padding: 60px 5px;
     background-color: var(--c1)
 }
@@ -150,20 +159,22 @@ main {
 }
 
 #sobre article {
+    position: relative;
     justify-content: center;
-  
     gap: 2rem;
     padding: 2rem 0px;
 }
 
 #sobre img {
-    width: 100px;
+    width: 25vw;
+    max-width: 200px;
 }
 
 #sobre p {
+    max-width: 500px;
     color: #FFFFFF8F;
     font-size: .8rem;
-    max-width: 300px;
+    white-space: pre-wrap;
 }
 
 #sobre strong {
@@ -171,18 +182,35 @@ main {
   background-image: linear-gradient(to bottom, var(--c4), var(--c5))
 }
 
-#sobre #infoMais {
-  display: block;
-  width: 95%;
-  margin: auto;
-    white-space: -moz-pre-wrap;   /*Mozilla, since 1999 */ 
-   white-space: -pre-wrap;      /* Opera 4-6*/ 
-   white-space: -o-pre-wrap;    /* Opera 7 */ 
-   white-space: pre-wrap;       /* css-3 */ 
-   word-wrap: break-word;       /* Internet Explorer 5.5+ */ 
-   white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari 
-   */
+#infoMais {
+    width: 80vw;
+    max-width: 600px;
+    font-size: .8rem;
+    white-space: pre-wrap;
+    color: #FFFFFF8F;
+    background-color: var(--c1);
+    border: none;
+    border-radius: 15px;
 }
+
+#infoMais button {
+    position: sticky;
+    top: 0px;
+    right: 20px;
+    float: right;
+    margin-right: 20px;
+    padding: 5px 9px;
+    color: white;
+    background-color: var(--c5);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0px 0px 3pc black;
+}
+
+
 
 #projetos {
     display: block;
