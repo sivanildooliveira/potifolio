@@ -37,16 +37,13 @@ html {
 }
 
 .quadro {
-    border: 5px solid var(--c2);
+    width: max-content;
+    border: .5vw solid var(--c2);
     border-radius: 5px;
 }
 
-.center-quadro-r {
-    transform: translate(15%, 15%)
-}
-
-.center-quadro-l {
-    transform: translate(-15%, 15%)
+.center-quadro {
+    transform: translate(10%, 10%)
 }
 
 .btn-pree {
@@ -94,7 +91,7 @@ header ul {
     padding: 0px;
     font-size: .8rem;
     font-weight: bold;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
 header ul a {
@@ -107,6 +104,7 @@ header ul a {
 header ul a:hover {
     color: white;
     text-shadow: 0px 0px 3px #FFFFFF8F;
+    transform: scale(1.2);
 }
 
 
@@ -192,7 +190,7 @@ main {
     background-color: var(--c1);
     border: none;
     border-radius: 15px;
-    transform: scale(.5);
+    transform: scale(.9);
     transform-origin: center;
     transition: transform .1s ease;
 }
@@ -226,29 +224,13 @@ main {
     padding: 60px 5px;
 }
 
-#projetos h3 {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 1.1rem;
-    color: var(--c4);
-}
-
-#projetos .div-flex {
-    justify-content: space-evenly;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-
-#projetos .info-prog, #projetos .img-prog {
-    max-width: 300px;
-    margin: .5rem 0px;
-}
 
 #projetos article {
+    flex-wrap: wrap;
     transform: scale(.8);
     transition: .6s ease;
+    gap: 2vw 5vw;
+    font-weight: lighter;
 }
 
 #projetos article:hover {
@@ -259,13 +241,33 @@ main {
     border-radius: 15px;
 }
 
-#projetos .info-prog h6{
+#projetos article:hover p{
+    width: 80vw;
+    max-width: 800px;
+}
+
+#projetos h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--c4);
+}
+
+#projetos article img {
+    width: 20vw;
+    max-width: 300px;
+}
+
+#projetos article h6{
     font-size: .9rem;
     font-weight: lighter;
     margin: .2rem;
 }
 
-#projetos .info-prog p {
+#projetos article p {
+    width: 60vw;
+    max-width: 600px;
     opacity: .7;
     font-size: .7rem;
     margin: 0px;
