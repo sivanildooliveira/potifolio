@@ -179,7 +179,8 @@ main {
 
 #sobre strong {
   color: white;
-  background-image: linear-gradient(to bottom, var(--c4), var(--c5))
+  background-image: linear-gradient(to bottom, var(--c4), var(--c5));
+  cursor: pointer;
 }
 
 #infoMais {
@@ -191,7 +192,11 @@ main {
     background-color: var(--c1);
     border: none;
     border-radius: 15px;
+    transform: scale(.5);
+    transform-origin: center;
+    transition: transform .1s ease;
 }
+
 
 #infoMais button {
     position: sticky;
@@ -235,9 +240,23 @@ main {
     margin-bottom: 3rem;
 }
 
+
 #projetos .info-prog, #projetos .img-prog {
     max-width: 300px;
     margin: .5rem 0px;
+}
+
+#projetos article {
+    transform: scale(.8);
+    transition: .6s ease;
+}
+
+#projetos article:hover {
+    transform: scale(1);
+    background-color: var(--c1);
+    padding: 3rem;
+    color: white;
+    border-radius: 15px;
 }
 
 #projetos .info-prog h6{

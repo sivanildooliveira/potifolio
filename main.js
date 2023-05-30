@@ -9,6 +9,7 @@ header.querySelectorAll('a').forEach((lk)=>{
     })
 })
 
+
 var verMais = (id)=>{
   document.getElementById(id).showModal()
 }
