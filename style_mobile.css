@@ -2,12 +2,10 @@
 
 header #btnMenu {
     display: block;
-}
-
-header #btnMenu {
-    display: block;
     cursor: pointer;
-    border: none;
+    border: 1px solid #FFFFFF8F;
+    border-radius: .5rem;
+    padding: .7rem;
     z-index: 2000;
 }
 
