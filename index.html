@@ -7,6 +7,7 @@
 
   <title>HTML</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utils.css">
   <link rel="stylesheet" href="style_mobile.css"media="screen and (max-width: 768px)">
 
 </head>
@@ -19,37 +20,30 @@
       </span>
     </div>
 
-    <h5>Sivanildo Oliveira</h5>
-    <ul id="menuPri" class="div-flex">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#contatos">Contatos</a></li>
-    </ul>
+    <h5><span style="color: var(--c2);">Sivanildo</span> Oliveira</h5>
+
+    
+    <div id="menuPri">
+      <ul class="div-flex">
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Curriculo</a></li>
+      </ul>
+      
+    </div>
   </header>
   
   <main>
+
     <section id="home">
-      <div class="center">
-        <h1>Desenvolvedor <br>Full Stack</h1>
+      <div>
+          <h1>Full Stack</h1>
+          <h1 style="color: var(--c3); font-weight: bolder; font-size: 11vw; margin-top: -3vw;">Developer</h1>
+          <p><strong>Olá, meu nome é Sivanildo</strong> e sou um desenvolvedor Full Stack. Com 2 anos de experiência, sou apaixonado em criar soluções completas, desde a interface do usuário até o sistema back-end.</p>
       </div>
-    </section>
-    
-    <section id="sobre">
-      <h3>Sobre mim</h3>
-      <article class="div-flex">
-        <div class="quadro">
-          <img src="img_sobre.jpg" alt="" class="center-quadro-l">
-        </div>
-    
-        <div>
-          <p>
-            Olá, meu nome é Sivanildo Oliveira de Souza e sou um desenvolvedor Full Stack. Sou apaixonado em criar soluções completas, desde a interface do usuário até o sistema back-end. Estou sempre buscando aprimorar minhas habilidades e entregar resultados de qualidade. É um prazer ter você aqui e, estou aberto a novas oportunidades. Obrigado!
-          </p>
-          <strong class="btn-pree" onclick="verMais('infoMais')">mais +</strong>
-        </div>
-      </article>
+      <img src="ilust_home.png" alt="developer">
     </section>
     
     
@@ -110,25 +104,6 @@
       
     </section>
   </main>
-
-  <dialog id="infoMais">
-    <button onclick="infoMais.close()">X</button> 
-    <p>
-      Olá! Meu nome Sivanildo, e tenho o prazer de apresentar um pouco sobre mim. Sou um entusiasta da programação e tenho 28 anos de idade. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas na Faculdade Anhanguera.
-      
-      Ao longo do meu percurso, adquiri conhecimentos sólidos em diversas tecnologias. Tenho paixão por programar e trabalho tanto no Back-End como no Font-End (Full Stack). Minha experiência inclui projetos pessoais, nos quais tive a oportunidade de explorar diferentes áreas e aprimorar minhas habilidades.
-      
-      Meus principais conhecimentos estão nas linguagens de programação Python, JavaScript além das linguagens de marcação HTML e CSS. Além disso, possuo experiência no uso de frameworks como Flask e Kivy, que me permitem desenvolver aplicativos web e móveis com eficiência. Através dessas ferramentas, consigo criar soluções robustas e interativas.
-      
-      Embora ainda não tenha trabalhado em uma empresa da área, estou comprometido em aprimorar minhas habilidades e adquirir experiência profissional. Estou sempre em busca de novos desafios e oportunidades para crescer como desenvolvedor. Tenho como objetivo contribuir com equipes de desenvolvimento, aplicar meus conhecimentos e aprender com profissionais experientes.
-
-      Além do aspecto técnico, prezo pela excelência e ética profissional. Sempre busco desenvolver soluções eficientes e de qualidade, cumprindo prazos e priorizando a satisfação do cliente. Tenho facilidade em trabalhar em equipe, sou pró-ativo e estou disposto a colaborar para alcançar os melhores resultados.
-
-      Estou empolgado para mostrar meu trabalho e compartilhar minhas habilidades com o mundo. Se você estiver em busca de um desenvolvedor Full Stack dedicado, com conhecimentos sólidos e paixão pela programação, não hesite em entrar em contato.
-
-      Obrigado por visitar meu portfólio. Estou ansioso para futuras oportunidades e projetos desafiadores
-    </p>
-  </dialog>
 
   <script src="main.js"></script>
 </body>
