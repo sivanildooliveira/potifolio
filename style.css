@@ -67,7 +67,7 @@ header h5:hover {
 }
 
 #menuPri {
-    width: 50%;
+    width: max-content;
 }
 
 header ul {
@@ -76,7 +76,7 @@ header ul {
     list-style: none;
     padding: 0px;
     font-size: 1.2rem;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 header ul li {

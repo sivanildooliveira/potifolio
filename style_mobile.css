@@ -78,7 +78,7 @@ header.active > #menuPri {
     width: 50vh;
     visibility: visible;
     overflow-y: auto;
-    box-shadow: 50vw 0px 1px rgba(0, 0, 0, 0.342);
+    box-shadow: 50vw 0px 20px rgba(0, 0, 0, 0.342);
 }
 
 
