@@ -167,6 +167,8 @@ section > h3 {
     font-size: 1.8vw;
     padding: 0.3vw 0.7vw;
     margin-top: .8vw;
+    border: 1px solid var(--c2);
+    border-radius: .4vw;
 }
 
 #home img {
