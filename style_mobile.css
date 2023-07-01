@@ -46,15 +46,15 @@ header.active #hamburger::before {
     left: 0px;
     top: 50px;
     width: 0px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
     display: block;
     background-color: white;
-    transition: .3s;
+    transition: .1s;
     visibility: hidden;
     overflow: hidden;
     color: black;
     text-align: center;
-    
+    box-shadow: 40vw 0px 25px rgba(0, 0, 0, 0.096);
 }
 
 #menuPri .div-flex {
@@ -64,8 +64,8 @@ header.active #hamburger::before {
 header > #menuPri a{
     color: var(--c2);
     padding: .8rem 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.062);
-    font-weight: 900;
+    border-top: 1px solid rgba(0, 0, 0, 0.068);
+    font-weight: 600;
 }
 
 header > #menuPri a:hover{
@@ -74,7 +74,7 @@ header > #menuPri a:hover{
 }
 
 header.active > #menuPri {
-    width: 50vh;
+    width: 50vw;
     visibility: visible;
     overflow-y: auto;
   
