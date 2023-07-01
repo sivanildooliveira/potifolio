@@ -175,13 +175,9 @@ section > h3 {
 }
 
 #home .btn-pree {
-    padding: 0.5vw 0.7vw;
-    margin-top: .8vw;
-    border: none;
     background-color: var(--c4);
-    border-radius: .5vw;
+    border-radius: .4rem;
     color: var(--c5);
-    font-weight: 300;
 }
 
 #home .btn-pree:hover {
@@ -292,6 +288,7 @@ section > h3 {
 }
 
 #tecnologias article div {
+    width: max-content;
     padding: 30px;
     background-color: rgb(241, 241, 241);
     border-radius: 15px;
@@ -310,7 +307,7 @@ section > h3 {
 }
 
 #tecnologias article div span {
-    font-weight: 800;
+    font-weight: 700;
     color: var(--c2);
 }
 
