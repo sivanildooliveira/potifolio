@@ -308,6 +308,7 @@ section > h3 {
 
 #tecnologias article div span {
     font-weight: 700;
+    font-size: .9rem;
     color: var(--c2);
 }
 
