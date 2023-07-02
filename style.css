@@ -391,9 +391,9 @@ footer ul li i {
 footer form input, footer form textarea {
     
     min-width: 300px;
-    padding: 7px;
+    padding: 8px;
     border: none;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 5px;
     background-color: var(--c2);
     color: var(--c5);
@@ -413,7 +413,7 @@ footer form button[type=submit] {
 }
 
 footer form input::placeholder, footer form textarea::placeholder {
-    color: var(--c3);
+    color: var(--c5);
     opacity: .5;
 }
 
