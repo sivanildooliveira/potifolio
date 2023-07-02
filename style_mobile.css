@@ -80,13 +80,12 @@ header.active > #menuPri {
   
 }
 
-
 #conhecimentos article > div {
     justify-content: center;
 }
 
 #home p {
-    font-size: 2.4vw !important;
+    font-size: 1rem !important;
 
 }
 
