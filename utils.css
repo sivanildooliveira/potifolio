@@ -38,23 +38,7 @@
     transform: translate(10%, 10%)
 }
 
-.btn-pree {
-    display: flex;
-    width: max-content;
-    align-items: center;
-    justify-content: space-between;
-    padding: .5rem;
-    margin: 5px 0px !important;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 5px;
-    background-color: transparent;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.342);
-    color: var(--c2);
-    transition: .4s;
-}
-
-.btn-pree:hover {
+.btn:hover {
     background-color: var(--c4);
     color: white;
     
@@ -67,10 +51,10 @@
     justify-content: space-between;
     padding: .5rem;
     margin: 5px 0px !important;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 400;
     text-decoration: none;
     border-radius: 5px;
-    border: 1px solid var(--c2);
     background-color: transparent;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.342);
     color: var(--c2);
@@ -78,14 +62,9 @@
 }
 
 .btn:hover {
-    border: 1px solid transparent;
-    background-color: var(--c4);
-    color: white;
+  
+    background-color: var(--c3);
+    color: var(--c5);
     
 }
 
-@media (max-width: 700px){
-    .btn-pree {
-        font-size: 2vw;
-    }
-}
