@@ -43,7 +43,7 @@ header {
     width: calc(95% - 2rem);
     height: 40px;
     padding: 5px 1rem;
-    background: var(--c2);
+    background: var(--c1);
     border-radius: 0px 25px 25px 0px;
     color: white;
     gap: 7rem;
@@ -335,7 +335,7 @@ section > h3 {
     border-radius: 15px;
 }
 
-#projetos ul li:hover p {
+#projetos ul li.active p {
     opacity: 1;
 }
 
@@ -348,6 +348,73 @@ section > h3 {
     text-align: right;
     font-weight: normal;
     color: var(--c5);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: var(--c1);
+    color: var(--c5);
+}
+
+footer section h3 {
+    color: currentColor;
+}
+
+footer ul {
+    display: grid;
+    padding: 0px;
+    list-style: none;
+    gap: 1rem;
+}
+
+footer ul li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+footer ul li i {
+    padding: .5rem .65rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--c2);
+
+}
+
+
+
+footer form input, footer form textarea {
+    
+    min-width: 300px;
+    padding: 7px;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: var(--c2);
+    color: var(--c5);
+    font-weight: bold;
+    outline-color: var(--c3);
+}
+
+footer form button[type=submit] {
+    display: block;
+    padding: 10px 30px;
+    background-color: var(--c3);
+    border: none;
+    border-radius: 5px;
+    color: var(--c2);
+    font-weight: bolder;
+    font-size: .8rem;
+}
+
+footer form input::placeholder, footer form textarea::placeholder {
+    color: var(--c3);
+    opacity: .5;
 }
 
 
