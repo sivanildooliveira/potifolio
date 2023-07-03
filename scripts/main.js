@@ -23,7 +23,7 @@ potfolios.forEach((el)=>{
 })
 
 
-const salvarMensagem = ()=>{
+const salvarMensage = ()=>{
   const form = document.getElementById('formMensage');
 
   let nome = form.querySelector('#nome')
