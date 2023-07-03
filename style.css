@@ -307,8 +307,11 @@ section > h3 {
 }
 
 #projetos ul {
+    padding: 10px;
+    border-radius: 15px;
     overflow-y: auto;
-    gap: 1rem;
+    gap: 2rem;
+    background-color: var(--c1);
 }
 
 
@@ -322,6 +325,7 @@ section > h3 {
     border-radius: 15px;
     padding: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+    cursor: pointer;
 }
 
 #projetos ul li p{
@@ -401,13 +405,13 @@ footer form input, footer form textarea {
     outline-color: var(--c3);
 }
 
-footer form button[type=submit] {
+footer form button {
     display: block;
     padding: 10px 30px;
-    background-color: var(--c3);
+    background-color: var(--c4);
     border: none;
     border-radius: 5px;
-    color: var(--c2);
+    color: var(--c5);
     font-weight: bolder;
     font-size: .8rem;
 }

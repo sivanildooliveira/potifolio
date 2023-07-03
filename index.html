@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
+  <title>Portfólio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="utils.css">
   <link rel="stylesheet" href="style_mobile.css"media="screen and (max-width: 768px)">
@@ -208,7 +208,7 @@
       <ul class="div-flex">
         <li class="card" style="background-image: url('imagens/potfolio/roserocha.png');">
           <p>
-            <strong>e-commerce</strong><br>
+            <strong>Loja virtual</strong><br>
             Loja virtual que contará com dastboard pra o administrador onde tera controle de estoque, vendas, produtos e acesso dos clientes.
             Alem disso contara com gerenciamento de usuários (firebase admin). Os clientes tera acesso á seu histórico de compras e favoritar produtos.
             Tudo isso em um banco de dados em tempo real (firebase firestone).
@@ -220,7 +220,7 @@
 
         <li class="card" style="background-image: url('imagens/potfolio/esperanca.png');">
           <p>
-            <strong>Sites/Aplicação Web</strong><br>
+            <strong>Site</strong><br>
             Site institucional que contará com dastboard pra o administrador, onde tera controle de usuários, duvidas dos usuarios, atualizar informações e eventos, adicionar fotos e vídeos e acesso dos usuarios.
             Alem disso contara com gerenciamento de usuários (firebase admin). Os usuários tera acesso á Biblia oline, fazer perguntas ao suporte, pedir orações.
             Tudo isso em um banco de dados em tempo real (firebase firestone).
@@ -279,13 +279,13 @@
 
     <section>
       <h3>Fale Comigo</h3>
-      <form action="">
+      <form id="formMensage" action="">
         <input type="text" name="nome" id="nome" placeholder="Seu nome"><br>
         <input type="email" name="email" id="email" placeholder="e-mail"><br>
-        <input type="tel" name="tel" id="tel" placeholder="telefone"><br><br><br>
-        <input type="text" name="tit" id="tit" placeholder="titulo da mensagem"><br>
+        <input type="telefone" name="telefone" id="telefone" placeholder="telefone"><br><br><br>
+        <input type="text" name="titulo" id="titulo" placeholder="titulo da mensagem"><br>
         <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="mensagem"></textarea>
-        <button type="submit">Enviar</button>
+        <button type="button" onclick="salvarMensagem()">Enviar</button>
 
       </form>
     </section>
