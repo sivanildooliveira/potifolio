@@ -382,6 +382,12 @@ footer ul li {
     gap: .5rem;
 }
 
+footer ul li a {
+    text-decoration: none;
+    color: currentColor;
+    padding: .5rem 0px;
+}
+
 footer ul li i {
     padding: .5rem .65rem;
     font-size: 1.5rem;
