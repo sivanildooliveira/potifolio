@@ -1,3 +1,23 @@
+
+
+fetch('https://roserocha.onrender.com/', { mode: 'no-cors' })
+  .then(response => {
+    console.log(response)
+  })
+  .catch(error => {
+    console(error)
+  });
+
+fetch('https://igrejaesperanca.onrender.com/', { mode: 'no-cors' })
+.then(response => {
+  console.log(response)
+})
+.catch(error => {
+  console(error)
+});
+
+
+
 var btnmenu = document.getElementById('btnMenu');
 var header = document.querySelector('header');
 const menu = document.getElementById('menuPri');
