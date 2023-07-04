@@ -68,3 +68,34 @@
     
 }
 
+
+
+.bollons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    display: flex;
+    width: max-content;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    gap: 5px;
+}
+
+.bollon {
+    opacity: .3;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--c4);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.bollons .active {
+    opacity: 1;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px var(--c4);
+}
+

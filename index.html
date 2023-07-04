@@ -28,11 +28,11 @@
     
     <div id="menuPri">
       <ul class="div-flex">
-        <li><a href="#sobre">sobre mim</a></li>
-        <li><a href="#conhecimentos">meus conhecimentos</a></li>
-        <li><a href="#tecnologias">tecnologias utilizadas</a></li>
-        <li><a href="#projetos">meus projetos</a></li>
-        <li><a href="#contatos">contatos</a></li>
+        <li><a href="#sobre">SOBRE</a></li>
+        <li><a href="#conhecimentos">HABILIDADES</a></li>
+        <li><a href="#tecnologias">TECNOLOGIAS</a></li>
+        <li><a href="#projetos">PROJETOS</a></li>
+        <li><a href="#contatos">CONTATOS</a></li>
         <li><a href="https://github.com/sivanildooliveira?tab=repositories" target="_blank" style="font-size: 25px;"><i class="bi bi-github"></i></a></li>
       </ul>
       
@@ -89,23 +89,21 @@
           
         <p id="maisSobre">
           Olá a todos! Gostaria de compartilhar um pouco sobre mim.
-          Desde muito jovem, sempre fui apaixonado por tecnologia e tudo o que ela pode oferecer.
-        
-          Minha jornada acadêmica tem sido uma experiência incrível, permitindo-me explorar diferentes conceitos e ferramentas no campo da tecnologia. Estou constantemente aprimorando minhas habilidades técnicas e buscando conhecimento em áreas como programação, estrutura de dados e engenharia de software. Acredito que a tecnologia é uma ferramenta poderosa para impulsionar mudanças e criar soluções inovadoras.
+          Desde muito jovem, sempre fui apaixonado por tecnologia e tudo o que ela pode oferecer. Minha jornada acadêmica tem sido uma experiência incrível, permitindo-me explorar diferentes conceitos e ferramentas no campo da tecnologia. Estou constantemente aprimorando minhas habilidades técnicas e buscando conhecimento em áreas como programação, estrutura de dados e engenharia de software. Acredito que a tecnologia é uma ferramenta poderosa para impulsionar mudanças e criar soluções inovadoras.
           Além disso, tenho conhecimentos na área de design gráfico. Durante minha trajetória, adquiri conhecimentos nessa área, compreendendo a importância de uma boa comunicação visual e o impacto que isso pode ter em produtos e serviços. Essa combinação de habilidades em desenvolvimento de software, juntamente com o conhecimento em design gráfico, permite-me abordar projetos de forma abrangente e multidisciplinar.
           Atualmente, estou em busca da minha primeira oportunidade profissional na área de tecnologia. Estou ansioso para aplicar meus conhecimentos e contribuir de forma significativa em projetos desafiadores. Tenho uma mente curiosa e estou sempre disposto a aprender e crescer profissionalmente.
         
           Agradeço a oportunidade de compartilhar um pouco sobre mim. Estou entusiasmado com as possibilidades que o futuro reserva na área de tecnologia. Se você tiver alguma oportunidade ou projeto interessante, adoraria conversar mais sobre como posso contribuir. Obrigado!
           </p>
           
-          <buttom style="display: block; text-align: center; padding: 10px; font-size: .6rem" onclick="openVerMaisSobre(this)">ver mais<br><i class="bi bi-arrow-bar-down"></i></buttom>
+          <buttom style="display: block; text-align: center; padding: 10px; font-size: .8rem; cursor: pointer; font-weight: bold;" onclick="openVerMaisSobre(this)">ver mais<br><i class="bi bi-arrow-bar-down"></i></buttom>
 
       </article>
       
     </section>
     
     <section id="conhecimentos">
-      <h3>Meus conhecimentos:</h3>
+      <h3>Minhas Habilidades</h3>
       <article>
         <div class="div-flex">
             <div class="card">
@@ -160,7 +158,7 @@
     </section>
     
     <section id="tecnologias">
-      <h3>Tecnologias que utilizo</h3>
+      <h3>Tecnologias</h3>
 
       <article class="div-flex">
         <div>
@@ -218,44 +216,90 @@
 
     <section id="projetos">
 
-      <h3>Alguns dos meus projetos</h3>
+      <h3>Meus Projetos</h3>
 
-      <ul class="div-flex">
-        <li class="card" style="background-image: url('imagens/portifolio/roserocha.png');">
-          <p>
-            <strong>Loja virtual</strong><br>
-            Loja virtual que contará com dastboard pra o administrador onde tera controle de estoque, vendas, produtos e acesso dos clientes.
-            Alem disso contara com gerenciamento de usuários (firebase admin). Os clientes tera acesso á seu histórico de compras e favoritar produtos.
-            Tudo isso em um banco de dados em tempo real (firebase firestone).
-            <br><br>
-            esse projeto encontra-se em fase de desenvolvimento.<br>
-            <a href="https://roserocha.onrender.com/" target="_blank">clique para visualizar</a>
-          </p>
+      <ul id="listPortfolio">
+
+        <div class="pass">
+          <span onclick="altProject(-1)" class="bi bi-chevron-left"></span>
+          <span onclick="altProject(1)" class="bi bi-chevron-right"></span>
+        </div>
+
+        <li class="active">
+          <div class="div-flex">
+            <img src="imagens/portifolio/roserocha.png" alt="">
+            <div>
+              <h4>
+                Loja virtual
+                <div class="icons">
+                  <img src="imagens/logos/python.png" alt="">
+                  <img src="imagens/logos/flask.png" alt="">
+                  <img src="imagens/logos/firebase.png" alt="">
+                </div>
+              </h4>
+              <p>
+                Loja virtual que contará com dastboard pra o administrador onde tera controle de estoque, vendas, produtos e acesso dos clientes.
+                Alem disso contara com gerenciamento de usuários (firebase admin). Os clientes tera acesso á seu histórico de compras e favoritar produtos.
+                Tudo isso em um banco de dados em tempo real (firebase firestone).
+                <br><br>
+                esse projeto encontra-se em fase de desenvolvimento.
+              </p>
+              <a class="btn" href="https://roserocha.onrender.com/" target="_blank">ir para o projeto</a>
+            </div>
+          </div>
         </li>
 
-        <li class="card" style="background-image: url('imagens/portifolio/esperanca.png');">
-          <p>
-            <strong>Site</strong><br>
-            Site institucional que contará com dastboard pra o administrador, onde tera controle de usuários, duvidas dos usuarios, atualizar informações e eventos, adicionar fotos e vídeos e acesso dos usuarios.
-            Alem disso contara com gerenciamento de usuários (firebase admin). Os usuários tera acesso á Biblia oline, fazer perguntas ao suporte, pedir orações.
-            Tudo isso em um banco de dados em tempo real (firebase firestone).
-            <br><br>
-            esse projeto encontra-se em fase de desenvolvimento.<br>
-            <a href="https://igrejaesperanca.onrender.com/" target="_blank">clique para visualizar</a>
-          </p>
+        <li>
+          <div class="div-flex">
+            <img src="imagens/portifolio/esperanca.png" alt="">
+            <div>
+              <h4>
+                Site Institucional
+                <div class="icons">
+                  <img src="imagens/logos/python.png" alt="">
+                  <img src="imagens/logos/flask.png" alt="">
+                  <img src="imagens/logos/firebase.png" alt="">
+                </div>
+              </h4>
+              <p>
+                Site institucional que contará com dastboard pra o administrador, onde tera controle de usuários, duvidas dos usuarios, atualizar informações e eventos, adicionar fotos e vídeos e acesso dos usuarios.
+                Alem disso contara com gerenciamento de usuários (firebase admin). Os usuários tera acesso á Biblia oline, fazer perguntas ao suporte, pedir orações.
+                Tudo isso em um banco de dados em tempo real (firebase firestone).
+                <br><br>
+                esse projeto encontra-se em fase de desenvolvimento.
+              </p>
+              <a class="btn" href="https://igrejaesperanca.onrender.com/" target="_blank">clique para visualizar</a>
+            </div>
+          </div>
         </li>
 
-        <li class="card" style="background-image: url('imagens/portifolio/systemec.png');">
-          <p>
-            <strong>Aplicação Descktop/Web</strong><br>
-            A aplicação proposta é um software de gerenciamento que permite aos usuários administrar clientes, serviços, imprimir notas de serviço e orçamentos, além de gerenciar o orçamento de serviços. O objetivo principal é fornecer uma solução eficiente para empresas que oferecem serviços, como oficinas mecânicas, empresas de manutenção, entre outros.
-            <br><br>
-            esse projeto em sua versão Web encontra-se em fase de desenvolvimento.<br>
-          </p>
+        <li>
+          <div class="div-flex">
+            <img src="imagens/portifolio/systemec.png" alt="">
+            <div>
+              <h4>
+                Aplicação Descktop/Web
+                <div class="icons">
+                  <img src="imagens/logos/python.png" alt="">
+                  <img src="imagens/logos/flask.png" alt="">
+                  <img src="imagens/logos/firebase.png" alt="">
+                </div>
+              </h4>
+              <p>
+                A aplicação proposta é um software de gerenciamento que permite aos usuários administrar clientes, serviços, imprimir notas de serviço e orçamentos, além de gerenciar o orçamento de serviços. O objetivo principal é fornecer uma solução eficiente para empresas que oferecem serviços, como oficinas mecânicas, empresas de manutenção, entre outros.
+                <br><br>
+                esse projeto em sua versão Web encontra-se em fase de desenvolvimento.
+              </p>
+              <a class="btn" href="https://roserocha.onrender.com/" target="_blank">ir para o projeto</a>
+            </div>
+          </div>
         </li>
+
+        <div class="bollons"></div>
+
         
       </ul>
-
+      
     </section>
   </main>
 
