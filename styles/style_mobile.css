@@ -89,9 +89,13 @@ header.active > #menuPri {
 
 }
 
+#listPortfolio li {
+    height: max-content;
+}
+
 #listPortfolio li > div {
     display: block;
-    height: max-content;
+    height: auto;
     padding: 10px;
     align-items: flex-start;
     gap: 5px;
