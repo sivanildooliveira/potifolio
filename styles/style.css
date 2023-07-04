@@ -122,13 +122,11 @@ main section {
 }
 
 section > h3 {
-    position: relative;
     color: var(--c2);
-    display: block;
-    width: max-content;
+    display: flex;
+    width: fit-content;
     margin: 30px 0px;
-    text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-top: 4px solid var(--c3);
 }
 
@@ -336,7 +334,7 @@ section > h3 {
     padding: 20px 60px 50px 60px;
     border-radius: 15px;
     gap: 0px;
-    background-color: var(--c5);
+    background-image: linear-gradient(to bottom, white, var(--c5));
 }
 
 #listPortfolio .pass {
@@ -377,7 +375,7 @@ section > h3 {
     padding: 10px 0px;
     background-color: transparent;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
     transition: .4s;
     overflow: hidden;
     color: white;
@@ -398,7 +396,7 @@ section > h3 {
 
 #listPortfolio li > div > img {
     height: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #listPortfolio p{
@@ -411,6 +409,9 @@ section > h3 {
     overflow-x: auto;
 }
 
+#listPortfolio .icons {
+    margin-top: 10px;
+}
 
 #listPortfolio .icons img {
     height: 1rem;

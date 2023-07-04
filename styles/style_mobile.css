@@ -89,4 +89,19 @@ header.active > #menuPri {
 
 }
 
+#listPortfolio li > div {
+    display: block;
+    height: max-content;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#listPortfolio li > .div-flex >  img{
+    display: block;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
 
