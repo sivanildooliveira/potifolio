@@ -381,6 +381,12 @@ section > h3 {
     color: white;
 }
 
+#listPortfolio li.active {
+    width: 100%;
+    background-color: var(--c1);
+    
+}
+
 #listPortfolio li > div {
     height: 300px;
     padding: 10px;
@@ -388,11 +394,6 @@ section > h3 {
     gap: 5px;
 }
 
-#listPortfolio li.active {
-    width: 100%;
-    background-color: var(--c1);
-    
-}
 
 #listPortfolio li > div > img {
     height: 100%;
