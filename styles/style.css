@@ -301,11 +301,13 @@ section > h3 {
     justify-content: left;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 #tecnologias article div {
     width: max-content;
+    min-width: 60px;
+    min-height: 60px;
     padding: 20px;
     background-color: rgb(241, 241, 241);
     border-radius: 15px;

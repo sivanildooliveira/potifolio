@@ -60,58 +60,72 @@
 
 @keyframes fullStack {
     0% {
-        content: "|";
+        content: "";
     }
     5% {
         content: "F";
     }
     10% {
-        content: "Fu|";
+        content: "Fu";
     }
     15% {
         content: "Ful";
     }
     20% {
-        content: "Full|";
+        content: "Full";
     }
     25% {
         content: "Full ";
     }
     30% {
-        content: "Full S|";
+        content: "Full S";
     }
     35% {
         content: "Full St";
     }
     40% {
-        content: "Full Sta|";
+        content: "Full Sta";
     }
     45% {
         content: "Full Stac";
     }
     50% {
-        content: "Full Stack|";
+        content: "Full Stack";
     }
     60% {
         content: "Full Stack";
     }
     70% {
-        content: "Full Stack|";
+        content: "Full Stack";
     }
     80% {
         content: "Full Stack";
     }
     90% {
-        content: "Full Stack|";
+        content: "Full Stack";
     }
     100% {
         content: "Full Stack";
     }
     
-    
 }
   
 .loading-full-stack::after {
-    content: "Full Stack|";
-    animation: fullStack 3s ease-in-out infinite;
+    content: "Full Stack";
+    animation: fullStack 3s ease-in-out normal;
+}
+
+
+@keyframes barr {
+    0% {
+        content: '|';
+    }
+    100% {
+        content: '';
+    }
+}
+
+.loading-full-stack-barr::after {
+    content: "|";
+    animation: barr 1s ease-in-out infinite;
 }

@@ -89,6 +89,10 @@ header.active > #menuPri {
 
 }
 
+#tecnologias .div-flex {
+    justify-content: center;
+}
+
 #listPortfolio {
     padding: 0px;
 }
