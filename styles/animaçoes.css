@@ -15,7 +15,7 @@
     }
 }
   
-.loading-animation::after {
+.loading-retss::after {
     content: "...";
     animation: loading 1s infinite;
 }
@@ -55,4 +55,63 @@
 .animi-digit::after {
     content: '';
     animation: digitar .5s linear infinite;
+}
+
+
+@keyframes fullStack {
+    0% {
+        content: "|";
+    }
+    5% {
+        content: "F";
+    }
+    10% {
+        content: "Fu|";
+    }
+    15% {
+        content: "Ful";
+    }
+    20% {
+        content: "Full|";
+    }
+    25% {
+        content: "Full ";
+    }
+    30% {
+        content: "Full S|";
+    }
+    35% {
+        content: "Full St";
+    }
+    40% {
+        content: "Full Sta|";
+    }
+    45% {
+        content: "Full Stac";
+    }
+    50% {
+        content: "Full Stack|";
+    }
+    60% {
+        content: "Full Stack";
+    }
+    70% {
+        content: "Full Stack|";
+    }
+    80% {
+        content: "Full Stack";
+    }
+    90% {
+        content: "Full Stack|";
+    }
+    100% {
+        content: "Full Stack";
+    }
+    
+    
+}
+  
+.loading-full-stack::after {
+    content: "Full Stack|";
+    animation: fullStack 3s ease-in-out infinite;
 }
