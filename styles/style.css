@@ -499,6 +499,7 @@ footer form input, footer form textarea {
     background-color: var(--c2);
     color: var(--c5);
     font-weight: bold;
+    font-size: 1rem;
     outline-color: var(--c3);
 }
 
