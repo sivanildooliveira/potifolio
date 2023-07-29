@@ -112,7 +112,7 @@
   
 .loading-full-stack::after {
     content: "Full Stack";
-    animation: fullStack 3s ease-in-out normal;
+    animation: fullStack 4s ease-in-out normal;
 }
 
 
