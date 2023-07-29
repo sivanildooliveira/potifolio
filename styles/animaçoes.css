@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@keyframes loading {
+    0% {
+        content: "";
+    }
+    25% {
+        content: ".";
+    }
+    50% {
+        content: "..";
+    }
+    75% {
+        content: "...";
+    }
+}
+  
+.loading-retss::after {
+    content: "...";
+    animation: loading 1s infinite;
+}
+
+
+
+  
+@keyframes loading-round {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-round {
+    margin: auto;
+    width: 23px;
+    height: 23px;
+    border: 6px solid #ccc;
+    border-top: 6px solid var(--c4);
+    border-radius: 50%;
+    animation: loading-round 1s linear infinite;
+}
+
+
+@keyframes digitar {
+    0% {
+        content: '|';
+    }
+    100%{
+        content: '';
+    }
+}
+
+.animi-digit::after {
+    content: '';
+    animation: digitar .5s linear infinite;
+}
+
+
+@keyframes fullStack {
+    0% {
+        content: "";
+    }
+    5% {
+        content: "F";
+    }
+    10% {
+        content: "Fu";
+    }
+    15% {
+        content: "Ful";
+    }
+    20% {
+        content: "Full";
+    }
+    25% {
+        content: "Full ";
+    }
+    30% {
+        content: "Full S";
+    }
+    35% {
+        content: "Full St";
+    }
+    40% {
+        content: "Full Sta";
+    }
+    45% {
+        content: "Full Stac";
+    }
+    50% {
+        content: "Full Stack";
+    }
+    60% {
+        content: "Full Stack";
+    }
+    70% {
+        content: "Full Stack";
+    }
+    80% {
+        content: "Full Stack";
+    }
+    90% {
+        content: "Full Stack";
+    }
+    100% {
+        content: "Full Stack";
+    }
+    
+}
+  
+.loading-full-stack::after {
+    content: "Full Stack";
+    animation: fullStack 3s ease-in-out normal;
+}
+
+
+@keyframes barr {
+    0% {
+        content: '|';
+    }
+    100% {
+        content: '';
+    }
+}
+
+.loading-full-stack-barr::after {
+    content: "|";
+    animation: barr 1s ease-in-out infinite;
+}

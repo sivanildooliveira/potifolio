@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+header #btnMenu {
+    display: block;
+    cursor: pointer;
+    border-radius: .5rem;
+    padding: 10px;
+    z-index: 2000;
+}
+
+header #hamburger{
+    display: block;
+    width: 25px;
+    border-top: 2px solid;
+    color: currentColor;
+    transition: .3s;
+  }
+  
+#hamburger::after, #hamburger::before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-top: 6px;
+    background: currentColor;
+    transition: .3s;
+}
+
+header.active #hamburger {
+    transform: rotate(180deg);
+    border-top-color: transparent;
+}
+
+header.active #hamburger::after {
+    top: -8px;
+    transform: rotate(130deg)
+}
+
+header.active #hamburger::before {
+    transform: rotate(-130deg)
+}
+
+#menuPri {
+    position: fixed;
+    left: 0px;
+    top: 55px;
+    width: 0px;
+    height: max-content;
+    padding-bottom: 20px;
+    border-bottom-right-radius: 15px;
+    display: block;
+    background-color: white;
+    transition: .1s;
+    visibility: hidden;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    box-shadow: 5vw 5px 25px rgba(0, 0, 0, 0.096);
+}
+
+#menuPri .div-flex {
+    display: block;
+}
+
+header #menuPri a{
+    color: var(--c2);
+    padding: .8rem 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.068);
+    font-weight: 600;
+}
+
+header #menuPri a:hover{
+    background-color: var(--c3);
+    color: white;
+}
+
+header.active #menuPri {
+    width: 50vw;
+    visibility: visible;
+    overflow-y: auto;
+  
+}
+
+#conhecimentos article > div {
+    justify-content: center;
+}
+
+#home p {
+    font-size: .8rem !important;
+
+}
+
+#tecnologias .div-flex {
+    justify-content: center;
+}
+
+#listPortfolio {
+    padding: 0px;
+}
+
+#listPortfolio .pass {
+    width: 97%; 
+}
+
+#listPortfolio .pass span {
+
+    background-color: var(--c5);
+    color: var(--c1);
+}
+
+#listPortfolio .pass span:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 5px var(--c5);
+}
+
+
+#listPortfolio li {
+    height: max-content;
+    padding-bottom: 30px;
+}
+
+#listPortfolio li > div {
+    display: block;
+    height: auto;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#listPortfolio li > .div-flex >  img{
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+footer section {
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+}
+
+
