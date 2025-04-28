@@ -187,7 +187,7 @@ section > h3, article > h3 {
 }
 
 #home .curriculo {
-    background-color: var(--c1);
+    background-color: var(--c2);
     border-radius: .4rem;
     color: white;
 }
